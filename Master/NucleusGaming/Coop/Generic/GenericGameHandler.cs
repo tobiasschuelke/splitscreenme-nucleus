@@ -40,7 +40,9 @@ namespace Nucleus.Gaming
 {
     public class GenericGameHandler : IGameHandler, ILogNode
     {
-        private const float HWndInterval = 10000;
+        // CHANGED:
+        //private const float HWndInterval = 10000;
+        private const float HWndInterval = 100;
 
         [DllImport("user32.dll")]
         [return: MarshalAs(UnmanagedType.Bool)]
@@ -2385,10 +2387,10 @@ namespace Nucleus.Gaming
                     return string.Empty;
                 }
 
-                if (!gen.ForceProcessPick)
+                /*if (!gen.ForceProcessPick)
                 {
                     ShowInstanceInfo(player, i);
-                }
+                }*/
 
                 if (gen.ChangeIPPerInstanceAlt)
                 {
@@ -4592,7 +4594,9 @@ namespace Nucleus.Gaming
                     if (gen.GameName == "Halo Custom Edition" || gen.GameName == "Ghost Recon Wildlands" /*|| gen.LauncherExe?.Length > 0*/)
                     {
                         //Halo CE and GRW seem to need to wait X additional seconds otherwise crashes...
-                        Thread.Sleep(10000);
+                        // CHANGED:
+                        //Thread.Sleep(10000);
+                        Thread.Sleep(5000);
                     }
 
                     string ids = "";

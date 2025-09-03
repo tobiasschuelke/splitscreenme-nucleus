@@ -2029,9 +2029,9 @@ namespace Nucleus.Coop
                         BackColor = ChoosenColor,
                         Location = new Point(screen.Bounds.X, screen.Bounds.Y),
                         Width = screen.WorkingArea.Size.Width,
-                        Height = screen.WorkingArea.Size.Height + 50,
-                        BackgroundImage = clientAreaPanel.BackgroundImage,
-                        BackgroundImageLayout = ImageLayout.Stretch,
+                        Height = screen.WorkingArea.Size.Height + 200,
+                        //BackgroundImage = clientAreaPanel.BackgroundImage,
+                        //BackgroundImageLayout = ImageLayout.Stretch,
                         FormBorderStyle = FormBorderStyle.None,
                         StartPosition = FormStartPosition.Manual
                     };
