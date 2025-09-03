@@ -92,7 +92,7 @@ namespace Nucleus.Gaming
         protected double timerInterval = 1000;
         public double TimerInterval => timerInterval;
 
-        public int HWndInterval = 10000;
+        public int HWndInterval = 100;
 
         internal CursorModule _cursorModule { get; set; }
         public GameProfile profile;
@@ -2382,7 +2382,7 @@ namespace Nucleus.Gaming
                     if (gen.GameName == "Halo Custom Edition" || gen.GameName == "Ghost Recon Wildlands" /*|| gen.LauncherExe?.Length > 0*/)
                     {
                         //Halo CE and GRW seem to need to wait X additional seconds otherwise crashes...
-                        Thread.Sleep(10000);
+                        Thread.Sleep(5000);
                     }
 
                     string ids = "";
