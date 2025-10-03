@@ -42,5 +42,21 @@ namespace Nucleus.Gaming
         {
             process = proc;
         }
+
+        public ProcessData(ProcessData other)
+        {
+            process = other.Process;
+            Finished = other.Finished;
+            HWnd = other.HWnd;
+            Position = other.Position;
+            HWNDRetry = other.HWNDRetry;
+            Size = other.Size;
+            Setted = other.Setted;
+            Register0 = other.Register0;
+            KilledMutexes = other.KilledMutexes;
+            RegLong = other.RegLong;
+            Status = other.Status;
+            AudioVolume = other.AudioVolume;
+        }
     }
 }

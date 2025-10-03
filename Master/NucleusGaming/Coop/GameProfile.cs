@@ -293,7 +293,7 @@ namespace Nucleus.Gaming.Coop
             notes = string.Empty;
             title = string.Empty;
 
-            hWndInterval = 0;
+            hWndInterval = 100;
             pauseBetweenInstanceLaunch = 0;
 
             profileToSave = 0;
